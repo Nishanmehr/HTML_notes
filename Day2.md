@@ -1100,3 +1100,594 @@ Completed
 - Forms Basics ✅
 - Form Attributes ✅
 - Input Types (Part 1) ✅
+
+
+
+
+# 📅 Day 2 - HTML Forms (Part 2)
+
+---
+
+# 📌 More Input Types
+
+HTML provides many input types for different kinds of user data.
+
+---
+
+## 1. Date (`type="date"`)
+
+### Definition
+
+Used to select a calendar date.
+
+### Syntax
+
+```html
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob">
+```
+
+---
+
+## 2. Time (`type="time"`)
+
+### Definition
+
+Used to select only time.
+
+### Syntax
+
+```html
+<label for="time">Meeting Time</label>
+<input type="time" id="time" name="time">
+```
+
+---
+
+## 3. Datetime Local (`type="datetime-local"`)
+
+### Definition
+
+Used to select both date and time together.
+
+### Syntax
+
+```html
+<label for="interview">Interview Time</label>
+<input
+type="datetime-local"
+id="interview"
+name="interview">
+```
+
+---
+
+## 4. Month (`type="month"`)
+
+### Definition
+
+Allows the user to select only a month and year.
+
+### Syntax
+
+```html
+<label for="month">Joining Month</label>
+<input
+type="month"
+id="month"
+name="month">
+```
+
+---
+
+## 5. Week (`type="week"`)
+
+### Definition
+
+Allows the user to select a specific week of a year.
+
+### Syntax
+
+```html
+<label for="week">Select Week</label>
+<input
+type="week"
+id="week"
+name="week">
+```
+
+---
+
+## 6. Color (`type="color"`)
+
+### Definition
+
+Displays a color picker.
+
+### Syntax
+
+```html
+<label for="color">Favorite Color</label>
+<input
+type="color"
+id="color"
+name="color">
+```
+
+---
+
+## 7. Range (`type="range"`)
+
+### Definition
+
+Creates a slider.
+
+### Syntax
+
+```html
+<label for="rating">Rating</label>
+
+<input
+type="range"
+id="rating"
+name="rating"
+min="0"
+max="10">
+```
+
+---
+
+## 8. Search (`type="search"`)
+
+### Definition
+
+Used for search fields.
+
+### Syntax
+
+```html
+<label for="search">Search</label>
+
+<input
+type="search"
+id="search"
+name="search"
+placeholder="Search here...">
+```
+
+---
+
+## 9. File (`type="file"`)
+
+### Definition
+
+Used to upload files.
+
+### Syntax
+
+```html
+<label for="resume">Upload Resume</label>
+
+<input
+type="file"
+id="resume"
+name="resume">
+```
+
+### Multiple Files
+
+```html
+<input
+type="file"
+multiple>
+```
+
+---
+
+## 10. Hidden (`type="hidden"`)
+
+### Definition
+
+Stores hidden information that users cannot see.
+
+### Syntax
+
+```html
+<input
+type="hidden"
+name="employeeId"
+value="EMP1001">
+```
+
+---
+
+# 📌 Selection Controls
+
+---
+
+# Radio Button
+
+## Definition
+
+Allows selecting only one option.
+
+### Syntax
+
+```html
+<label for="male">Male</label>
+<input
+type="radio"
+id="male"
+name="gender"
+value="Male">
+
+<label for="female">Female</label>
+<input
+type="radio"
+id="female"
+name="gender"
+value="Female">
+
+<label for="other">Other</label>
+<input
+type="radio"
+id="other"
+name="gender"
+value="Other">
+```
+
+### Important Points
+
+- Same `name`
+- Different `id`
+- One option only
+- `checked` selects by default
+
+---
+
+# Checkbox
+
+## Definition
+
+Allows selecting multiple options.
+
+### Syntax
+
+```html
+<label for="html">HTML</label>
+<input
+type="checkbox"
+id="html"
+name="skills"
+value="HTML">
+
+<label for="css">CSS</label>
+<input
+type="checkbox"
+id="css"
+name="skills"
+value="CSS">
+```
+
+### Important Points
+
+- Multiple selections
+- Unique IDs
+- Can use same `name`
+- `checked` selects by default
+
+---
+
+# 📌 Dropdown
+
+## `<select>`
+
+Creates a dropdown.
+
+```html
+<select id="role" name="role">
+
+<option value="">Select Role</option>
+
+<option value="developer">
+Developer
+</option>
+
+<option value="tester">
+Tester
+</option>
+
+</select>
+```
+
+---
+
+## `<option>`
+
+Represents one item inside a dropdown.
+
+```html
+<option value="java">
+Java Developer
+</option>
+```
+
+---
+
+## `<optgroup>`
+
+Groups options together.
+
+```html
+<select>
+
+<optgroup label="North India">
+
+<option>Delhi</option>
+
+<option>Noida</option>
+
+</optgroup>
+
+<optgroup label="South India">
+
+<option>Bangalore</option>
+
+<option>Hyderabad</option>
+
+</optgroup>
+
+</select>
+```
+
+---
+
+# 📌 Textarea
+
+## Definition
+
+Used for multi-line text input.
+
+```html
+<textarea
+rows="5"
+cols="40"
+placeholder="Tell us about yourself">
+</textarea>
+```
+
+---
+
+# 📌 Buttons
+
+## Submit
+
+```html
+<button type="submit">
+Submit
+</button>
+```
+
+Submits the form.
+
+---
+
+## Reset
+
+```html
+<button type="reset">
+Reset
+</button>
+```
+
+Resets the form.
+
+---
+
+## Button
+
+```html
+<button type="button">
+Click Me
+</button>
+```
+
+Used with JavaScript.
+
+---
+
+# 📌 HTML5 Validation
+
+## `min`
+
+```html
+<input
+type="number"
+min="18">
+```
+
+Minimum allowed value.
+
+---
+
+## `max`
+
+```html
+<input
+type="number"
+max="60">
+```
+
+Maximum allowed value.
+
+---
+
+## `minlength`
+
+```html
+<input
+type="text"
+minlength="3">
+```
+
+Minimum number of characters.
+
+---
+
+## `maxlength`
+
+```html
+<input
+type="text"
+maxlength="30">
+```
+
+Maximum number of characters.
+
+---
+
+## `pattern`
+
+```html
+<input
+type="password"
+pattern=".{8,}">
+```
+
+Custom validation using Regular Expressions.
+
+---
+
+## `step`
+
+```html
+<input
+type="number"
+step="1">
+```
+
+Controls increment values.
+
+---
+
+## `multiple`
+
+```html
+<input
+type="file"
+multiple>
+```
+
+Allows selecting multiple files.
+
+---
+
+# 📊 Interview Differences
+
+## Radio vs Checkbox
+
+| Radio | Checkbox |
+|--------|----------|
+| One option | Multiple options |
+| Same `name` | Independent |
+| Gender | Skills |
+
+---
+
+## Readonly vs Disabled
+
+| Readonly | Disabled |
+|-----------|----------|
+| Cannot edit | Cannot edit |
+| Value submitted | Value not submitted |
+| Can copy | Cannot interact |
+
+---
+
+## Placeholder vs Value
+
+| Placeholder | Value |
+|-------------|-------|
+| Hint | Default value |
+| Not submitted | Submitted |
+| Disappears | Remains |
+
+---
+
+## ID vs Name
+
+| ID | Name |
+|----|------|
+| Unique | Can repeat |
+| Used by label | Used to send data |
+| CSS & JavaScript | Server |
+
+---
+
+# 🎯 Common Interview Questions
+
+1. What is an HTML Form?
+2. Difference between GET and POST.
+3. Difference between `id` and `name`.
+4. Difference between `readonly` and `disabled`.
+5. Difference between radio and checkbox.
+6. Difference between `placeholder` and `value`.
+7. Difference between `<input>` and `<textarea>`.
+8. What is `<select>`?
+9. What is `<option>`?
+10. What is `<optgroup>`?
+11. What is `<textarea>`?
+12. What are the types of buttons?
+13. What is the default type of `<button>`?
+14. What is `min`?
+15. What is `max`?
+16. What is `minlength`?
+17. What is `maxlength`?
+18. What is `step`?
+19. What is `multiple`?
+20. What is `pattern`?
+
+---
+
+# ✅ Day 2 Completed
+
+## Topics Covered
+
+- Forms
+- Form Attributes
+- Labels
+- Input Types
+- Date
+- Time
+- Datetime-local
+- Month
+- Week
+- Color
+- Range
+- Search
+- File
+- Hidden
+- Radio Button
+- Checkbox
+- Dropdown
+- Select
+- Option
+- Optgroup
+- Textarea
+- Buttons
+- HTML5 Validation
+- Interview Questions
+
+---
+
+## 📈 Progress
+
+```text
+Day 1 ✅ Completed
+Day 2 ✅ Completed
+
+Overall HTML Progress
+
+█████████████████████████ 95%
+```
+
