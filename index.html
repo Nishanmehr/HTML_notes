@@ -3,11 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First HTML Page</title>
 </head>
 <body>
-    <p>
-        
-    </p>
+    
+<!-- This is My First HTML Page -->
+    <header>
+   <h1 id = "home" class = "logo"><strong>Nishant Mehra</strong></h1>
+ </header>
+ <nav>
+   <a href = "#about">About</a>
+   <a href = "#projects">Projects</a>
+   <a href = "#contact">Contact</a>
+ </nav>
+ <main>
+   <hr>
+   <h2>Software Engineer</h2>
+   <p> Hii My Name Is Nishant Mehra And I recently Completed my Btech in
+    Computer Science and Engineering. I am a passionate software engineer with a strong interest in web development and programming. I enjoy learning new technologies and applying them to solve real-world problems. In my free time, I like to work on personal projects, contribute to open-source communities, and stay updated with the latest trends in the tech industry.
+   </p>
+   <hr>
+   <section>
+   <h2 id = "about">About Me</h2>
+   <p>I am a dedicated software engineer with a keen interest in creating efficient and scalable web applications. I have a solid foundation in programming languages such as Python, <mark>JavaScript</mark>, and Java, and I am always eager to learn and adapt to new technologies.</p>
+   </section>
+   <hr>
+   <section>
+   <h2>Education</h2>
+   <p><em>Bachelor of Technology in Computer Science and Engineering</em><br>XYZ University, 2023    OLD CGPA: <del>8.5</del> New CGPA: 8.8</p>
+   </section>
+   <hr>
+   <section>
+   <h2>Skills</h2>
+   <ul>
+   <li>Programming Languages: Python, JavaScript, Java</li>
+   <li>Web Development: <mark>HTML</mark>, CSS, React</li>
+   <li>Database Management: SQL, MongoDB</li>
+   <li>Tools: Git, Docker, VS Code</li>
+   </ul>
+   </section>
+   <hr>
+   <section>
+   <h2 id = "projects">Projects</h2>
+    <ol>
+   <li>Personal Portfolio Website: <span>Developed a responsive</span> personal portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills.<br></li>
+        <li>E-commerce Platform: Built a full-stack e-commerce application using React for the frontend and Node.js with Express for the backend, integrated with MongoDB for database management.<br></li>
+        <li>Chat Application: Created a real-time chat application using Socket.io and Node.js, allowing users to communicate in different chat rooms.
+         and i used 2<sup>3</sup>=9 numbers in maths.
+         and H <sub>2</sub>O is water.</li>
+         </ol>
+</section>
+<section>
+    <h2 id = "gallery">Gallery</h2>
+    <figure>
+        <img src = "uuu.png" alt = "Profile Picture" width = "200">
+        <figcaption>My Profile Picture</figcaption>
+    </figure>
+    <audio control>
+        <source src = "audio.mp3" type = "audio/mpeg">
+            Your browser does not support audio.
+    </audio>
+    <video width ="200" controls poster="heartwisefix.png">
+        <source src = "sct.mp4" type = "video/mp4">
+    </video>
+    <iframe src = "" ></iframe>
+</section>
+   <section>
+   <h2>Academic Details</h2>
+    <table>
+    <thead>
+       <tr>
+            <th>Year</th>
+            <th>Degree</th>
+            <th>College</th>
+            <th>CGPA</th>
+       </tr>
+    </thead>
+
+     <tbody>
+       <tr>
+            <td>2019-2023</td>
+            <td>B.Tech</td>
+            <td>XYZ University</td>
+            <td>8.8</td>
+       </tr>
+    </tbody>
+
+     <tfoot>
+       <tr>
+          <td>2018-2019</td>
+          <td>12th</td>
+          <td>ABC School</td>
+          <td>85%</td>
+       </tr>
+    </tfoot>
+</table>
+</section>
+
+<section>
+<h2>Semester Results</h2>
+<table>
+    <thead>
+         <tr>
+             <th>Subjects</th>
+             <th>Marks</th>
+         </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td>HTML</td>
+            <td>95</td>
+        </tr>
+
+         <tr>
+            <td>CSS</td>
+            <td>90</td>
+         </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>92</td>
+        </tr>
+  </tbody>
+
+
+<tfoot>
+        <tr>
+            <td colspan ="2">Total Marks = 277</td>
+       </tr>
+</tfoot>
+
+</table>
+</section>
+<section>
+<h2>Job Applications</h2>
+<form>
+    <label for = "fullname">Full Name:</label>
+    <input type = "text"
+     id = "fullname"
+     name = "fullname"
+     placeholder = "Enter your full name"
+     value = "Nishant"
+     autocomplete = "name"
+     minlength="3"
+     maxlength="30"
+     autofocus
+     required>
+<br>
+     <label for="employeeid">Employee ID</label>
+<input
+    type="text"
+    id="employeeid"
+    name="employeeid"
+    value="EMP1025"
+    readonly>
+<br>
+    <label for="premium">Premium Feature</label>
+<input
+    type="text"
+    id="premium"
+    name="premium"
+    value="Coming Soon"
+    disabled>
+    <br>
+    <label for = "textarea"> About Yourself</label>
+    <textarea id = "textarea" name ="textarea" rows ="5" cols ="50" placeholder = "Tell us about yourself..."></textarea> 
+    <br>
+    <label for = "address" >Address</label>
+    <textarea id = "address" name = "address" rows = "5" cols = "50" placeholder = "Enter your address..."></textarea> 
+     <br>
+     <label for ="age">Enter Your age</label>
+     <input type = "number" id="age" name = "age"
+     placeholder="enter your age"
+     min="18"
+     max ="60">
+     <br>
+     <label for = "experience"> Year of Experience</label>
+     <input type = "number" id ="experience" name = "experience" min = "0" max ="10" step ="1">
+     <br>
+     <label for ="password">Enter Your Password</label>
+     <input type = "password" id ="password" name = "password" pattern=".{8,}" title = "Password must be at least 8 characters long">
+<hr>
+</section>
+<h2>Additional Information</h2>
+    <label for = "dob"> Date of Birth:</label>
+    <input type = "date" id = "dob" name = "dob">
+    <br>
+    <label for = "time"> Meeting Time</label>
+    <input type ="time" id = "time" name = "time">
+    <br>
+    <label for = "datetime-local"> Available interview Time</label>
+    <input type = "datetime-local" id = "datetime-local" name = "datetime-local">
+    <br>
+    <label  for = "month"> Joining Month</label>
+    <input type = "month" id = "month" name = "month">
+    <br>
+    <label for ="color"> Favorite Color</label>
+    <input type = "color" id = "color" name = "color">
+    <br>
+    <label for = "range"> Rating</label>
+    <input type = "range" id = "range" name = "range" min = "0" max = "10"> 
+    <br>
+    <label for = "search "> Search Your Skills</label>
+    <input type = "search" id = "search" name = "search" placeholder = "search your skills">
+    <br>
+    <label for = "file" > Upload Your Resume</label>
+    <input type = "file" id ="file" name = "file"
+    multiple>
+    <br>
+    <label for = "hidden"></label>
+    <input type = "hidden" id = "hidden" name ="hidden" value="EMP1001">
+    <br>
+    <label for = "Gender">Select Your Gender:</label>
+    <label for ="male"> Male</label>
+    <input type = "radio" id = "male" name ="gender" value = "Male">
+    <label for = "female">Female</label>
+    <input type = "radio" id = "female" name ="gender" value = "Female"> 
+    <label for = "other">Other</label>
+    <input type = "radio" id = "other" name ="gender" value = "Other">
+<br>
+    
+    <label for = "checkbox"> Technical Skills</label>
+    <br>
+    <label for = "css">CSS</label>
+    <input type = "checkbox" id = "css" name = "checkbox" value="Css">
+    <br>
+    <label for = "javascript">JavaScript</label>
+    <input type = "checkbox" id = "javascript" name = "checkbox" value="JavaScript">
+    <br>
+    <label for = "spring-boot">Spring Boot</label>
+    <input type = "checkbox" id = "spring-boot" name = "checkbox" value="Spring Boot">
+    <br>
+    <label for = "java">Java</label>
+    <input type = "checkbox" id = "java" name = "checkbox" value="Java">
+    <br>
+    <label for = "dropdown"> Preferred Job Role</label>
+    <select id = "dropdown" name = "dropdown">
+        <option value ="role" selected > Select Role</option>
+        <option value = "developer">Software Developer</option>
+        <option value = "analyst">Data Analyst</option>
+        <option value = "manager">Project Manager</option>
+    </select>
+    <br>
+    <label for = "location"> Select Country</label>
+    <select id = "location" name = "location">
+    <option value = "location" selected>Select location</option>
+    <optgroup label = "North India">
+          <option value = "delhi">Delhi </option>
+          <option value = "noida">Noida</option>
+          <option value = "gurgaon">Gurgaon</option>
+          </optgroup>
+    <optgroup label = "South India">
+            <option value = "chennai">Chennai</option>
+            <option value = "bangalore">Bangalore</option>
+            <option value = "hyderabad">Hyderabad</option>
+ </optgroup>
+</select>
+<button type ="submit">Submit</button>
+<button type = "reset">Reset</button>
+<button type = "button">Normal</button>
+</form>
+<footer>
+ <hr>
+   <h2 id = "contact">Contact:</h2>
+   <p>nishantmehra@example.com</p>
+   <hr>
+   <h2>Social Links</h2>
+   <a href = "https://nishantmehraportfolio.netlify.app/ ">My Portfolio</a>
+   <br>
+   <a href = "https://github.com/Nishanmehr">Github</a>
+   <br>
+   <a href = "https://www.linkedin.com/in/nishantmehraa">Linkedin</a>
+   <br>
+      <small>Copyright &copy; 2023 Nishant Mehra. All rights reserved.</small>
+</footer>
+</main>
 </body>
 </html>
